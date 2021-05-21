@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/baokuro04122000/deploy-reat-app.git"
+    "url": "git+https://github.com/baokuro04122000/deploy-react-app.git"
   },
   "author": "dinh bao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/baokuro04122000/deploy-reat-app/issues"
+    "url": "https://github.com/baokuro04122000/deploy-react-app/issues"
   },
   "dependencies": {
     "aws-sdk": "^2.903.0",
