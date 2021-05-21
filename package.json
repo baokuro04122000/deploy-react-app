@@ -5,10 +5,8 @@
   "description": "this is ecommerce app",
   "main": "index.js",
   "scripts": {
-    "build": "cd frontend && npm start && npm run build",
-    "install-frontend": "cd frontend && npm install",
-    "heroku-postbuild": "npm run install-frontend && npm run build",
-    "start": "node --experimental-modules backend/server.js"
+    "build": "cd frontend && npm install && npm run build",
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
     "type": "git",
