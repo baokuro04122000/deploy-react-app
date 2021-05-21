@@ -22,14 +22,12 @@ Routes(app);
 // })
 const __dirname = path.resolve();
 app.use('/uploads',express.static(path.join(__dirname,'/uploads')));
-// app.use(express.static(path.join(__dirname,'/frontend/build')));
-// app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'/frontend/build/index.html')))
+ app.use(express.static(path.join(__dirname,'/frontend/build')));
+ app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'/frontend/build/index.html')))
 app.use((err, req, res, next) => {
     res.status(500).send({ message: err.message });
   });
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('frontend/build'));
-}
+
 //socket io
 const httpServer = http.Server(app);
 const io = new Server(httpServer,{cors : { origin : '*' }});

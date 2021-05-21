@@ -10,8 +10,15 @@
     "heroku-postbuild": "npm run install-frontend && npm run build",
     "start": "node --experimental-modules backend/server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baokuro04122000/deploy-reat-app.git"
+  },
   "author": "dinh bao",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baokuro04122000/deploy-reat-app/issues"
+  },
   "dependencies": {
     "aws-sdk": "^2.903.0",
     "bcrypt": "^5.0.1",
