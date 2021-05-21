@@ -1,0 +1,10 @@
+import productsController from './productsController.js';
+import usersController from './usersController.js';
+import ordersController from './ordersController.js';
+import adminController from './adminController.js';
+import uploadController from './uploadMulter.js';
+export const product = productsController;
+export const user = usersController;
+export const order = ordersController;
+export const admin = adminController;
+export const upload = uploadController;
